@@ -22,7 +22,7 @@
                                 <a href=""> <img src="img/img44.png" alt=""></a>
                         </div>
                         <ul class="flex space-x-4 font-bold">
-                                <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="index.html">Trang chủ</a>
+                                <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="index.php">Trang chủ</a>
                                 </li>
                                 <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="">Giới thiệu</a></li>
                                 <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="">Cửa hàng</a></li>                            

@@ -1,4 +1,3 @@
-
 <?php
  session_start();
  if(isset($_SESSION['user_acc'])){
@@ -24,7 +23,7 @@
 	<meta name="theme-color" content="#3b7977">
 
 	<!-- Primary Meta Tags -->
-	<title>Admin</title>
+	<title>Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS</title>
 	<meta name="title" content="Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS">
 	<meta name="description" content="Free open source Tailwind CSS starter Templates and Components to get you started quickly to creating websites in Tailwind CSS!">
           
@@ -88,7 +87,7 @@
                     ?> <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
                             <div id="myDropdown" class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
-               
+                            
                                 <div class="border border-gray-800"></div>
                                 <a href="login.php" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Ud</a>
                             </div>
@@ -112,13 +111,13 @@
                         </a>
                     </li>
                     <li class="mr-3 flex-1">
-                        <a href="templateadmin.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 border-purple-500">
-                            <i class="fa fa-envelope pr-0 md:pr-3  text-blue-600"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">Sản phẩm</span>
+                        <a href="templateadmin.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-purple-500">
+                            <i class="fa fa-envelope pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">Sản phẩm</span>
                         </a>
                     </li>
                     <li class="mr-3 flex-1">
-                        <a href="listnew.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white ">
-                            <i class="fas fa-chart-area pr-0 md:pr-3 "></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Tin tức</span>
+                        <a href="listnew.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-blue-600">
+                            <i class="fas fa-chart-area pr-0 md:pr-3 text-blue-600"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Tin tức</span>
                         </a>
                     </li>
                     
@@ -138,101 +137,12 @@
 
             <div class="bg-gray-800 pt-3">
                 <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
-                    <h3 class="font-bold pl-2">Sản phẩm</h3>
+                    <h3 class="font-bold pl-2">Tin tức</h3>
                 </div>
             </div>
 
             <div class="flex flex-wrap">
-              
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                  <a href="#">
-                    <div class="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-pink-600"><i class="fas fa-users fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Brugere Liste</h5>
-                                <h3 class="font-bold text-3xl">249 <span class="text-pink-500"><i class="fas fa-exchange-alt"></i></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-                    <!--/Metric Card-->
-              
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-yellow-200 to-yellow-100 border-b-4 border-yellow-600 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-yellow-600"><i class="fas fa-user-plus fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Nye Brugere</h5>
-                                <h3 class="font-bold text-3xl">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                  <!--/Metric Card-->
-              
-                  <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-indigo-200 to-indigo-100 border-b-4 border-indigo-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-indigo-600"><i class="fas fa-tasks fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Mine Opgaver</h5>
-                                <h3 class="font-bold text-3xl">7 opgaver</h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!--/Metric Card-->
-              
-                  <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-blue-600"><i class="fas fa-server fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Server Oppetid</h5>
-                                <h3 class="font-bold text-3xl">152 dage</h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                    <!--/Metric Card-->
-              
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-red-600"><i class="fas fa-inbox fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">SERVER FEJL</h5>
-                                <h3 class="font-bold text-3xl">3 <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                  <!--/Metric Card-->
+              tin tức
             </div>
 
 

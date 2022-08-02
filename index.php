@@ -24,7 +24,7 @@
       </div>
       <button id="btn" class="text-2xl text-white md:hidden block"><i class='bx bx-menu'></i></button>
       <ul id="menu" class="md:flex text-white md:space-x-4 font-bold  md:block hidden   ">
-        <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg  "><a href="index.html">Trang chủ</a></li>
+        <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg  "><a href="index.php">Trang chủ</a></li>
         <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg "><a href="">Giới thiệu</a></li>
         <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="">Cửa hàng</a></li>
         <li class="p-4 hover:bg-[#8cc63f] hover:rounded-lg"><a href="">Kiến thức</a></li>
@@ -124,7 +124,7 @@
       <h5 class="text-center text-2xl md:text-4xl font-bold">Sản Phẩm Bán Chạy</h5>
       <div class="flex justify-around pt-4">
         <div class="text-center">
-          <a href="bapcai.html"><img
+          <a href="bapcai.php"><img
               class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
               src="img/img15.jpg" alt="">
 
@@ -137,7 +137,7 @@
 
         </div>
         <div class="text-center">
-          <a href="bap.html"> <img
+          <a href="bap.php"> <img
               class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
               src="img/img16.jpg" alt=""></a>
 
@@ -148,7 +148,7 @@
 
         </div>
         <div class="text-center">
-          <a href="chuoi.html"><img
+          <a href="chuoi.php"><img
               class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
               src="img/img17.jpg" alt=""></a>
 
@@ -159,7 +159,7 @@
 
         </div>
         <div class="text-center">
-          <a href="cachua.html"> <img
+          <a href="cachua.php"> <img
               class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
               src="img/img18.jpg" alt=""></a>
 
@@ -204,7 +204,7 @@
         <div class="w-[1243px] h-[481px] bg-white m-auto">
           <div class="grid grid-cols-4 gap-8 pt-16 p-4">
             <div class="">
-              <a href="xoai.html"> <img
+              <a href="xoai.php"> <img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img24.jpg" alt=""></a>
 
@@ -215,7 +215,7 @@
 
             </div>
             <div>
-              <a href="bo.html"><img
+              <a href="bo.php"><img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img25.jpeg" alt=""></a>
 
@@ -227,7 +227,7 @@
 
             </div>
             <div>
-              <a href="ca.html"><img
+              <a href="ca.php"><img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img28.jpg" alt=""></a>
 
@@ -238,7 +238,7 @@
 
             </div>
             <div class="">
-              <a href="cam.html"> <img
+              <a href="cam.php"> <img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img27.jpg" alt=""></a>
 
@@ -259,16 +259,16 @@
     <h1 class="text-center text-6xl font-bold">Tin Tức</h1>
     <div class="grid grid-cols-3 gap-8 pt-8">
       <div class="h-[470px] shadow-2xl">
-        <a href="tintuc1.html"><img class="h-[284px] w-full" src="img/img38.jpg" alt=""></a>
+        <a href="tintuc1.php"><img class="h-[284px] w-full" src="img/img38.jpg" alt=""></a>
         <div class="p-4 ">
           <h6 class="text-2xl font-bold">Nấm vân có tác dụng gì?</h6>
-          <a href="tintuc1.html">
+          <a href="tintuc1.php">
             <p class="hover:text-[#8cc63f] pt-6">Cách đây 2000 năm,nấm vân chi rừng đã được biết đến và sử dụng</p>
           </a>
         </div>
       </div>
       <div class="h-[470px] shadow-2xl">
-        <a href="tintuc2.html"><img class="h-[284px] w-full" src="img/img39.jpg" alt=""></a>
+        <a href="tintuc2.php"><img class="h-[284px] w-full" src="img/img39.jpg" alt=""></a>
         <div class="p-4 ">
           <h6 class="text-2xl font-bold">Chả cốm ăn với gì thì ngon?</h6>
           <a href="tintuc2.html">
@@ -277,7 +277,7 @@
         </div>
       </div>
       <div class="h-[470px] shadow-2xl">
-        <a href="tintuc3.html"> <img class="h-[284px] w-full" src="img/img40.jpg" alt=""></a>
+        <a href="tintuc3.php"> <img class="h-[284px] w-full" src="img/img40.jpg" alt=""></a>
         <div class="p-4 ">
           <h6 class="text-2xl font-bold">Cốm tươi làm món gì thì ngon?</h6>
           <a href="tintuc3.html">
