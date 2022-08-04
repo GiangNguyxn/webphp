@@ -1,3 +1,16 @@
+<?php
+include 'db.php';
+if(isset($_GET['new_id'])){
+        $new_id=$_GET['new_id'];
+        $sql="select*from news where new_id=$new_id";
+        $kq=$conn->query($sql)->fetch();
+      }
+        
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,22 +64,22 @@
                                                 mới</h1>
                                         <div class="flex p-4 border-2 hover:bg-[#8cc63f] hover:text-white">
                                               <img class="w-16" src="img/img38.jpg" alt="">
-                                              <a href="tintuc1.html"> <span class="pl-2 font-bold">Nấm vân chi có tác dụng gì??</span></a> 
+                                              <a href=""> <span class="pl-2 font-bold">Nấm vân chi có tác dụng gì??</span></a> 
                                         </div>
                                         <div class="flex p-4 border-2  hover:bg-[#8cc63f] hover:text-white">
                                              <img class="w-16" src="img/img39.jpg" alt=""> 
-                                             <a href="tintuc2.html"> <span class="pl-2 font-bold">Chả cốm ăn với gì thì ngon??</span></a> 
+                                             <a href=""> <span class="pl-2 font-bold">Chả cốm ăn với gì thì ngon??</span></a> 
                                         </div>
                                         <div class="flex p-4 border-2  hover:bg-[#8cc63f] hover:text-white">
                                                 <img class="w-16" src="img/img40.jpg" alt="">
-                                                <a href="tintuc3.html">  <span class="pl-2 font-bold">Cốm tươi chế biến như nào thì ngon??</span></a>
+                                                <a href="">  <span class="pl-2 font-bold">Cốm tươi chế biến như nào thì ngon??</span></a>
                                         </div>
                                 </div>
 
                         </div>
                         <div class="col-span-3 ">
                                 <div class=" hover:shadow-2xl border-x-2 ">
-                                        <h1 class="text-2xl font-bold p-4 ">Nấm vân chi có tác dụng gì</h1>
+                                        <h1 class="text-2xl font-bold p-4 "><?php  echo $kq['title']  ?></h1>
                                         <span class="p-2">POSTED ON 16 THÁNG NĂM, 2022 BY MONA</span>
                                         <img class="w-full" src="img/img38.jpg " alt="">
                                         <div class="pt-8 px-5">

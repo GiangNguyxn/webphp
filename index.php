@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -15,8 +14,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
-  <div id="animations-bg" class=" h-[699px]  bg-cover static px-5 md:px-0 " style="background-image:url(img/img03.jpg);">
+<body>
+  <div id="animations-bg" class=" h-[699px]  bg-cover static px-5 md:px-0 "
+    style="background-image:url(img/img03.jpg);">
 
     <div class="flex space-x-9 justify-center items-center pt-4 xl:px-0 px-5">
       <div>
@@ -119,58 +119,42 @@
         </a>
       </div>
     </div>
-    <!-- end -->
+    <!-- SẢN PHẨM BÁN CHẠY -->
     <div id="main" class="bg-white mt-8 shadow-2xl px-5 md:px-0 ">
       <h5 class="text-center text-2xl md:text-4xl font-bold">Sản Phẩm Bán Chạy</h5>
-      <div class="flex justify-around pt-4">
-        <div class="text-center">
-          <a href="bapcai.php"><img
+     
+      <div class="  grid grid-cols-4 gap-8 ">
+      <?php
+        include 'db.php';
+          $sql="select*from product LIMIT 4";
+          $kq=$conn->query($sql);
+     
+          foreach($kq as $row ){
+            
+            ?>
+        <div class="text-center p-6">
+          <a href="detail_pro.php?id_pro=<?php  echo $row['id_pro']?>"><img
               class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
-              src="img/img15.jpg" alt="">
-
+              src="img/<?php  echo $row['img_pro']  ?>" alt="">
           </a>
-
           <div class="py-4">
-            <span class="hover:text-[#8cc63f]">Bắp cải</span>
-            <p class="text-[#8cc63f]">65,000đ</p>
+            <span class="hover:text-[#8cc63f]">
+              <?php echo $row['name_pro']    ?>
+            </span>
+            <p class="text-[#8cc63f]">
+              <?php echo $row['price_pro']?>
+            </p>
           </div>
-
         </div>
-        <div class="text-center">
-          <a href="bap.php"> <img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
-              src="img/img16.jpg" alt=""></a>
-
-          <div class="py-4">
-            <span class="hover:text-[#8cc63f]">Bắp mỹ</span>
-            <p class="text-[#8cc63f]">75,000đ</p>
-          </div>
-
-        </div>
-        <div class="text-center">
-          <a href="chuoi.php"><img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
-              src="img/img17.jpg" alt=""></a>
-
-          <div class="py-4">
-            <span class="hover:text-[#8cc63f]">Chuối Organic</span>
-            <p class="text-[#8cc63f]">35,000đ</p>
-          </div>
-
-        </div>
-        <div class="text-center">
-          <a href="cachua.php"> <img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 w-[235px] "
-              src="img/img18.jpg" alt=""></a>
-
-          <div class="py-4">
-            <span class="hover:text-[#8cc63f]">Cà chua</span>
-            <p class="text-[#8cc63f]">75,000đ</p>
-          </div>
-
-        </div>
+        <?php
+       
+          }
+         ?>
       </div>
+     
+
     </div>
+  </div>
   </div>
   <!-- end -->
   <div style="background-image: url(img/img23.jpg);" class="bg-cover h-[800px] mt-8 static ">
@@ -181,26 +165,7 @@
         <p class="font-bold">Từ trang trại của chúng tôi ngay trước cửa nhà bạn.</p>
       </div>
       <div class="space-y-8 ">
-        <div class="flex justify-center space-x-3 absolute md:left-[860px] top-[1820px]  ">
-          <div class="">
-            <div class="bg-[#8cc63f] p-4  rounded-full text-white">
-              <p class="text-4xl">0</p>
-              <p>giờ</p>
-            </div>
-          </div>
-          <div class="">
-            <div class="bg-[#8cc63f] p-4 rounded-full text-white">
-              <p class="text-4xl">0</p>
-              <p>phút</p>
-            </div>
-          </div>
-          <div class="">
-            <div class="bg-[#8cc63f] p-4 rounded-full text-white">
-              <p class="text-4xl">0</p>
-              <p>giây</p>
-            </div>
-          </div>
-        </div>
+       
         <div class="w-[1243px] h-[481px] bg-white m-auto">
           <div class="grid grid-cols-4 gap-8 pt-16 p-4">
             <div class="">
@@ -210,41 +175,42 @@
 
               <div class="pt-4">
                 <p class="hover:text-[#8cc63f] ">Xoài cát Hòa Lộc</p>
-                <del >130,000đ</del><p class="text-[#8cc63f]">90,000đ</p>
+                <del>130,000đ</del>
+                <p class="text-[#8cc63f]">90,000đ</p>
               </div>
 
             </div>
             <div>
-              <a href="bo.php"><img
-                  class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
+              <a href=""><img class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img25.jpeg" alt=""></a>
 
               <div class="pt-4">
                 <p class="hover:text-[#8cc63f]">Bơ sáp 034 Lâm Đồng</p>
-                <del >135,000đ</del><p class="text-[#8cc63f]">90,000đ</p>
-               
+                <del>135,000đ</del>
+                <p class="text-[#8cc63f]">90,000đ</p>
+
               </div>
 
             </div>
             <div>
-              <a href="ca.php"><img
-                  class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
+              <a href=""><img class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img28.jpg" alt=""></a>
 
               <div class="pt-4">
                 <p class="hover:text-[#8cc63f]">Cá Bình Định</p>
-                <del >195,000đ</del><p class="text-[#8cc63f]">90,000đ</p>
+                <del>195,000đ</del>
+                <p class="text-[#8cc63f]">90,000đ</p>
               </div>
 
             </div>
             <div class="">
-              <a href="cam.php"> <img
-                  class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
+              <a href=""> <img class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/img27.jpg" alt=""></a>
 
               <div class="pt-4">
                 <p class="hover:text-[#8cc63f]">Cam xoàn hướng hữu cơ</p>
-                <del >65,000đ</del><p class="text-[#8cc63f]">30,000đ</p>
+                <del>65,000đ</del>
+                <p class="text-[#8cc63f]">30,000đ</p>
               </div>
 
             </div>
@@ -258,33 +224,25 @@
   <div class="max-w-7xl m-auto mt-8">
     <h1 class="text-center text-6xl font-bold">Tin Tức</h1>
     <div class="grid grid-cols-3 gap-8 pt-8">
+    <?php
+      $sql="select*from news";
+      $kq=$conn->query($sql);
+      foreach($kq as $row){
+      ?>
+      
+
       <div class="h-[470px] shadow-2xl">
-        <a href="tintuc1.php"><img class="h-[284px] w-full" src="img/img38.jpg" alt=""></a>
+        <a href="detail_new.php?new_id=<?php echo $row['new_id'] ?>"><img class="h-[284px] w-full" src="img/<?php echo $row['img']?>" alt=""></a>
         <div class="p-4 ">
-          <h6 class="text-2xl font-bold">Nấm vân có tác dụng gì?</h6>
+          <h6 class="text-2xl font-bold"><?php echo $row['title']?></h6>
           <a href="tintuc1.php">
-            <p class="hover:text-[#8cc63f] pt-6">Cách đây 2000 năm,nấm vân chi rừng đã được biết đến và sử dụng</p>
+            <p class="hover:text-[#8cc63f] pt-6"><?php echo $row['intro']?></p>
           </a>
         </div>
       </div>
-      <div class="h-[470px] shadow-2xl">
-        <a href="tintuc2.php"><img class="h-[284px] w-full" src="img/img39.jpg" alt=""></a>
-        <div class="p-4 ">
-          <h6 class="text-2xl font-bold">Chả cốm ăn với gì thì ngon?</h6>
-          <a href="tintuc2.html">
-            <p class="hover:text-[#8cc63f] pt-6">Bánh giò Bánh giò là một loại bánh được làm từ bột gạo tẻ,nhân....</p>
-          </a>
-        </div>
-      </div>
-      <div class="h-[470px] shadow-2xl">
-        <a href="tintuc3.php"> <img class="h-[284px] w-full" src="img/img40.jpg" alt=""></a>
-        <div class="p-4 ">
-          <h6 class="text-2xl font-bold">Cốm tươi làm món gì thì ngon?</h6>
-          <a href="tintuc3.html">
-            <p class="hover:text-[#8cc63f] pt-6">Cốm tươi làm món gì ngon Dùng cốm tươi làm món gì,cốm tươi có....</p>
-          </a>
-        </div>
-      </div>
+      <?php
+      }
+    ?>
     </div>
   </div>
   <!-- end -->

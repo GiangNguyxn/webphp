@@ -76,26 +76,7 @@
                 </span>
             </div>
 
-            <div class="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end">
-                <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-                    
-               
-                    <li class="flex-1 md:flex-none md:mr-3">
-                        <div class="relative inline-block">
-                            <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none"> <span class="pr-2"><i class="em em-robot_face"></i></span>Chào <?php
-                    echo $_SESSION['user_acc'];
-                    ?> <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></button>
-                            <div id="myDropdown" class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
-                              
-                           
-                                <div class="border border-gray-800"></div>
-                                <a href="login.php" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Ud</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>`
-            </div>
+          
         </div>
 
     </nav>
@@ -152,6 +133,8 @@
                             <th class="py-3 px-4 text-left">Username</th>
                             <th class="py-3 px-4 text-left">Password</th>
                             <th class="py-3 px-4 text-left">Phone</th>
+                            <th class="py-3 px-4 text-left">Xóa</th>
+                            
                           
                         </tr>
                         <?php
@@ -161,23 +144,22 @@
                         foreach($kq as $row){
                                 ?>
 
-                              
-
-              
-                 
+            
                         <tr class="hover:bg-gray-100">
                             <td class="px-4 py-3"><?php echo $row['id_acc'] ?> </td>
                             <td class="px-4 py-3"><?php echo $row['user_acc'] ?></td>
                             <td class="px-4 py-3"><?php echo $row['pass_acc'] ?></td>
                             <td class="px-4 py-3"><?php echo $row['sdt_acc'] ?> </td>
+                            <td class="px-4 py-3"><a href="delete_user.php?id_acc=<?php echo $row['id_acc']   ?>">Xóa</a> </td>
                            
                            
                         </tr>
                         <?php
                         }
                         ?>
-                   
+                     
             </table>
+          
         </div>
     </div>
 </div>

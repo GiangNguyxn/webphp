@@ -1,3 +1,15 @@
+<?php
+include 'db.php';
+if(isset($_GET['id_pro'])){
+  $id_pro=$_GET['id_pro'];
+  $sql="select*from product where id_pro=$id_pro";
+  $kq=$conn->query($sql)->fetch();
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,12 +50,12 @@
         </div>
         <div class="max-w-7xl m-auto flex  mt-8">
           <div>
-             <img class="w-[531px] h-[531px]" src="img/img24.jpg" alt="">
+             <img class="w-[531px] h-[531px]" src="img/<?php echo $kq['img_pro']   ?>" alt="">
           </div>
           <div class="space-y-6 mx-8">
-            <span><a href="index.html">Trang chủ</a></span>/ <span>Trái cây</span>
-            <h1 class="text-4xl font-bold">Xoài cát Hòa Lộc</h1>
-            <h2 class="text-[#8cc63f] text-2xl ">130.000đ</h2>
+            <span><a href="index.html">Trang chủ</a></span>/<span>Trái cây</span>
+            <h1 class="text-4xl font-bold"><?php echo $kq['name_pro']  ?></h1>
+            <h2 class="text-[#8cc63f] text-2xl "><?php echo $kq['price_pro']  ?></h2>
 
             <div  >
               <span><i class='bx bxs-checkbox-checked text-2xl'></i>Gọi mua hàng số 0979048136 </span>  <br>

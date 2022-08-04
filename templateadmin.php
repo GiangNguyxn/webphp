@@ -90,7 +90,7 @@
                             <div id="myDropdown" class="dropdownlist absolute bg-gray-800 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
                
                                 <div class="border border-gray-800"></div>
-                                <a href="login.php" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Ud</a>
+                                <a href="logout.php" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fas fa-sign-out-alt fa-fw"></i> Log Ud</a>
                             </div>
                         </div>
                     </li>
@@ -142,101 +142,41 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap">
+            
               
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                  <a href="#">
-                    <div class="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-pink-600"><i class="fas fa-users fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Brugere Liste</h5>
-                                <h3 class="font-bold text-3xl">249 <span class="text-pink-500"><i class="fas fa-exchange-alt"></i></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-                    <!--/Metric Card-->
-              
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-yellow-200 to-yellow-100 border-b-4 border-yellow-600 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-yellow-600"><i class="fas fa-user-plus fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Nye Brugere</h5>
-                                <h3 class="font-bold text-3xl">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                  <!--/Metric Card-->
-              
-                  <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-indigo-200 to-indigo-100 border-b-4 border-indigo-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-indigo-600"><i class="fas fa-tasks fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Mine Opgaver</h5>
-                                <h3 class="font-bold text-3xl">7 opgaver</h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!--/Metric Card-->
-              
-                  <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-blue-600"><i class="fas fa-server fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">Server Oppetid</h5>
-                                <h3 class="font-bold text-3xl">152 dage</h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                    <!--/Metric Card-->
-              
-                    <!--Metric Card-->
-                <div class="w-full md:w-1/2 xl:w-1/3 p-6">
-                    <a href="#">
-                      <div class="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded-full p-5 bg-red-600"><i class="fas fa-inbox fa-2x fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-600">SERVER FEJL</h5>
-                                <h3 class="font-bold text-3xl">3 <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                      </div>
-                    </a>
-                </div>
-                  <!--/Metric Card-->
-            </div>
+            <table class="table-auto w-full">
+                  
+                  <tr class="bg-blue-500 text-white shadow-lg">
+                      <th class="py-3 px-4 text-left">ID</th>
+                      <th class="py-3 px-4 text-left">Name</th>
+                      <th class="py-3 px-4 text-left">Image</th>
+                      <th class="py-3 px-4 text-left">Price</th>
+                      <th class="py-3 px-4 text-left">Sửa</th>
+                      <th class="py-3 px-4 text-left">Xóa</th>
+                  </tr>
+                  <?php
+                  include 'db.php';
+                  $sql="select*from product ";
+                  $kq=$conn->query($sql);
+                  foreach($kq as $row){
+                          ?>
+                  <tr class="hover:bg-gray-100">
+                      <td class="px-4 py-3"><?php echo $row['id_pro'] ?> </td>
+                      <td class="px-4 py-3"><?php echo $row['name_pro'] ?></td>
+                      <td class="px-4 py-3"><img class="w-32" src="img/<?php echo $row['img_pro'] ?>" alt=""></td>
+                      <td class="px-4 py-3"><?php echo $row['price_pro'] ?> </td>
+                      <th class="py-3 px-4 text-left"><a href="update_pro.php?id_pro=<?php echo $row['id_pro']    ?>"> Sửa</a></th>
+                      <th class="py-3 px-4 text-left"><a href="delete_pro.php?id_pro=<?php echo $row['id_pro']  ?>"> Xóa</a></th>
+                     
+                  </tr>
+                  <?php
+                  }
+                  ?>
+            
+      </table>
+      <a class="p-4 border-2 m-8 bg-cyan-400 inline-block" href="addproduct.php">Thêm sản phẩm</a>
+       
 
-
-    </div>
 
     
 
@@ -279,8 +219,8 @@
  }else{
     echo "Phải đăng nhập mới vào đc trang quản trị";
  }
-
-
 ?>
+<a class="border-1 p-4  inline-block" href="login.php">Đăng nhập</a>
+
 
 
